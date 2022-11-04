@@ -1,0 +1,45 @@
+header {
+  width: var(--main-width);
+  height: 120px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  font-family: "poppins", "Noto Sans KR";
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 800;
+}
+.header-nav {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+}
+.header-nav li {
+  display: flex;
+  align-items: center;
+  margin: 28px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.header-contact {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.header-contact div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 48px;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+}
+
+.contact-containter {
+  height: 250px;
+  background-color: #000000;
+}

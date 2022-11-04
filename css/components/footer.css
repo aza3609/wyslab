@@ -1,0 +1,17 @@
+footer {
+  width: var(--main-width);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "poppins", "Noto Sans KR";
+  color: #9e9e9e;
+}
+.footer-copyright {
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-address {
+  font-size: 15px;
+  font-weight: 300;
+}
