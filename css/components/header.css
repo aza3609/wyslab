@@ -23,6 +23,9 @@ header {
   font-size: 17px;
   font-weight: 500;
 }
+.header-nav li:hover {
+  color: rgb(18, 222, 113);
+}
 .header-contact {
   display: flex;
   justify-content: right;
@@ -37,6 +40,9 @@ header {
   border-radius: 25px;
   background-color: black;
   color: white;
+}
+.header-contact div:hover {
+  background-color: #44b7fe;
 }
 
 .contact-containter {
