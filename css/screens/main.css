@@ -47,7 +47,8 @@
 }
 .work-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(400px, 1fr));
+  grid-template-rows: minmax(500px, 550px);
   gap: 28px;
 }
 .work-list__item {
@@ -60,7 +61,7 @@
   color: white;
 }
 .work-item__img {
-  border-radius: 20px;
+  border-radius: var(--main-border-radius);
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -75,6 +76,7 @@
   box-sizing: border-box;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 2;
 }
 .work-item__category {
   font-weight: 300;
@@ -89,18 +91,17 @@
   margin-top: 20px;
   word-break: keep-all;
 }
-.work-list__item--KREAM {
-  grid-column: 1/3;
+.work-list__item--kream,
+.work-list__item--wys-event,
+.work-list__item--snu-gwuniverse {
+  grid-column: span 2;
+}
+.work-list__item--kream {
   color: #0f386b;
 }
-.work-list__item--wys-event {
-  grid-column: 2/4;
-}
+
 .work-list__item--gnss-data-center .work-item__category {
   color: #292530;
-}
-.work-list__item--snu-gwuniverse {
-  grid-column: 1/3;
 }
 .work-list__item--swpy {
   color: #250a5d;
@@ -132,4 +133,73 @@
 .contact-btn {
   width: 36px;
   height: 36px;
+}
+
+/*image-change*/
+.work-list__item--super-eye:hover {
+  content: url("../../src/work/super-eye-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work-list__item--super-eye-video:hover {
+  content: url("../../src/work/super-eye-video-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work-list__item--iass2022-poster:hover {
+  content: url("../../src/work/iass2022-poster-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work-list__item--server-rack-pannel:hover {
+  content: url("../../src/work/server-rack-pannel-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work-list__item--wys-event:hover {
+  content: url("../../src/work/wys-event-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work-list__item--coronagraph:hover {
+  content: url("../../src/work/coronagraph-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work-list__item--gnss-data-center:hover {
+  content: url("../../src/work/gnss-data-center-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work-list__item--kiw8:hover {
+  content: url("../../src/work/kiw8-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work-list__item--iri2021:hover {
+  content: url("../../src/work/iri2021-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work-list__item--solar-universe:hover {
+  content: url("../../src/work/solar-universe-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work-list__item--ai-winter-school:hover {
+  content: url("../../src/work/ai-winter-school-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
