@@ -10,6 +10,7 @@
 
 /*screens*/
 @import "screens/main.css";
+@import "screens/sub-pages.css";
 
 /*font*/
 @font-face {

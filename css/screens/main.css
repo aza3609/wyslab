@@ -1,5 +1,5 @@
 .main-text {
-  height: 500px;
+  height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -8,15 +8,15 @@
   font-size: 30px;
 }
 .main-text__name {
-  font-size: 210px;
+  font-size: 180px;
   font-weight: 600;
   margin-top: 30px;
   line-height: 100%;
 }
 
 .section-title {
-  font-size: 42px;
-  margin-top: 130px;
+  font-size: 38px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 .business-menu {
@@ -48,12 +48,12 @@
 .work-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(400px, 1fr));
-  grid-template-rows: minmax(500px, 550px);
+  grid-template-rows: minmax(440px, 470px);
   gap: 28px;
 }
 .work-list__item {
   position: relative;
-  height: 550px;
+  height: 470px;
   border-radius: var(--main-border-radius);
   display: flex;
   flex-direction: column;
@@ -82,12 +82,12 @@
   font-weight: 300;
 }
 .work-item__title {
-  font-size: 46px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 110%;
 }
 .work-item__description {
-  font-size: 17px;
+  font-size: 16px;
   margin-top: 20px;
   word-break: keep-all;
 }
