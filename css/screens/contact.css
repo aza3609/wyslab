@@ -9,6 +9,7 @@
   padding: 44px;
   box-sizing: border-box;
   color: white;
+  margin-top: 120px;
 }
 .contact-wrap span:first-child {
   font-size: 20px;
@@ -16,7 +17,7 @@
 .contact-wrap span:nth-child(2) {
   font-size: 38px;
   font-weight: 700;
-  margin: 20px 0px 40px 0px;
+  margin: 24px 0px 50px 0px;
 }
 .contact-wrap span:last-child {
   font-size: 24px;

@@ -141,6 +141,12 @@
 }
 
 /*image-change*/
+.work-list__item--kream:hover {
+  content: url("../../src/work/kream-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .work-list__item--super-eye:hover {
   content: url("../../src/work/super-eye-2.png");
   width: 100%;
@@ -201,7 +207,12 @@
   height: 100%;
   object-fit: cover;
 }
-
+.work-list__item--swpy:hover {
+  content: url("../../src/work/swpy-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .work-list__item--ai-winter-school:hover {
   content: url("../../src/work/ai-winter-school-2.png");
   width: 100%;
