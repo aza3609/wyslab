@@ -113,8 +113,8 @@
 }
 
 .contact-containter {
-  height: 250px;
-  background-color: #363636;
+  height: 200px;
+  background-color: rgb(36, 54, 121);
   border-radius: var(--main-border-radius);
   color: white;
   padding: 38px;
@@ -129,7 +129,7 @@
 }
 .contact-text__title {
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 600;
   margin-right: 16px;
 }
 .contact-text__description {
