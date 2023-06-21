@@ -96,6 +96,7 @@
   margin-top: 20px;
   word-break: keep-all;
 }
+.work-list__item--iri2023,
 .work-list__item--kream,
 .work-list__item--wys-event,
 .work-list__item--snu-gwuniverse {
@@ -141,6 +142,30 @@
 }
 
 /*image-change*/
+.work-list__item--dalo:hover {
+  content: url("../../src/work/dalo-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work-list__item--spaceai:hover {
+  content: url("../../src/work/spaceai-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work-list__item--iass2023:hover {
+  content: url("../../src/work/iass2023-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work-list__item--iri2023:hover {
+  content: url("../../src/work/iri2023-2.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .work-list__item--kream:hover {
   content: url("../../src/work/kream-2.png");
   width: 100%;
