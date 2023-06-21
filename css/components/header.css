@@ -1,9 +1,15 @@
 header {
   width: var(--main-width);
   height: 120px;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  display: flex;
+  justify-content: space-between;
   font-family: "poppins", "Noto Sans KR";
+}
+
+.header-bg img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .header-logo {
   display: flex;
@@ -19,12 +25,12 @@ header {
 .header-nav li {
   display: flex;
   align-items: center;
-  margin: 28px;
+  margin: 22px;
   font-size: 17px;
   font-weight: 500;
 }
 .header-nav li:hover {
-  color: rgb(18, 222, 113);
+  font-weight: 700;
 }
 .header-contact {
   display: flex;
@@ -42,7 +48,7 @@ header {
   color: white;
 }
 .header-contact div:hover {
-  background-color: #44b7fe;
+  background-color: rgb(38, 38, 38);
 }
 
 .contact-containter {

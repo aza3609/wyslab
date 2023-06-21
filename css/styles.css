@@ -13,19 +13,9 @@
 @import "screens/sub-pages.css";
 
 /*font*/
-@font-face {
-  font-family: "poppins", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap");
-  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
-}
-@font-face {
-  font-family: "Noto Sans KR", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
-  unicode-range: U+AC00-D7A3;
-}
 
 * {
-  font-family: "poppins", "Noto Sans KR";
+  font-family: "Pretendard", sans-serif;
   line-height: 150%;
 }
 
@@ -38,4 +28,15 @@ body {
 
 main {
   width: var(--main-width);
+}
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+h2 span {
+  font-weight: 800;
+}
+p {
+  font-size: 17px;
 }

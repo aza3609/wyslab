@@ -1,4 +1,4 @@
 :root {
   --main-width: 1220px;
-  --main-border-radius: 20px;
+  --main-border-radius: 24px 0px 24px 24px;
 }
