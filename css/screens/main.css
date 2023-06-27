@@ -58,6 +58,7 @@
 }
 .work-list__item {
   position: relative;
+  width: 100%;
   height: 470px;
   border-radius: 24px;
   display: flex;
@@ -68,7 +69,7 @@
 .work-item__img {
   border-radius: 24px;
   width: 100%;
-  height: 100%;
+  height: 470px;
   object-fit: cover;
   z-index: 0;
 }
