@@ -1,5 +1,6 @@
 footer {
-  width: var(--main-width);
+  width: 100%;
+  max-width: 1220px;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -14,4 +15,20 @@ footer {
 .footer-address {
   font-size: 14px;
   font-weight: 300;
+}
+@media screen and (max-width: 1320px) {
+  footer {
+    padding: 0px 50px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1160px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .footer-address {
+    margin-top: 10px;
+  }
 }

@@ -28,7 +28,9 @@ body {
 }
 
 main {
-  width: var(--main-width);
+  width: calc(100% - 100px);
+  max-width: 1220px;
+  margin: 0px 50px;
 }
 h2 {
   font-size: 30px;

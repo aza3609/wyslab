@@ -52,12 +52,12 @@
 }
 .work-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(400px, 1fr));
-  grid-template-rows: minmax(440px, 470px);
+  grid-template-columns: repeat(3, minmax(320px, auto));
   gap: 28px;
 }
 .work-list__item {
   position: relative;
+  object-fit: cover;
   width: 100%;
   height: 470px;
   border-radius: 24px;
@@ -69,7 +69,7 @@
 .work-item__img {
   border-radius: 24px;
   width: 100%;
-  height: 470px;
+  height: 100%;
   object-fit: cover;
   z-index: 0;
 }
@@ -126,6 +126,7 @@
   align-items: flex-start;
 }
 .contact-text {
+  word-break: keep-all;
   display: flex;
   align-items: center;
 }
@@ -145,103 +146,93 @@
 /*image-change*/
 .work-list__item--dalo:hover {
   content: url("../../src/work/dalo-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .work-list__item--spaceai:hover {
   content: url("../../src/work/spaceai-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .work-list__item--iass2023:hover {
   content: url("../../src/work/iass2023-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .work-list__item--iri2023:hover {
   content: url("../../src/work/iri2023-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .work-list__item--kream:hover {
   content: url("../../src/work/kream-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .work-list__item--super-eye:hover {
   content: url("../../src/work/super-eye-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .work-list__item--super-eye-video:hover {
   content: url("../../src/work/super-eye-video-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .work-list__item--iass2022-poster:hover {
   content: url("../../src/work/iass2022-poster-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .work-list__item--server-rack-pannel:hover {
   content: url("../../src/work/server-rack-pannel-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .work-list__item--wys-event:hover {
   content: url("../../src/work/wys-event-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .work-list__item--coronagraph:hover {
   content: url("../../src/work/coronagraph-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .work-list__item--gnss-data-center:hover {
   content: url("../../src/work/gnss-data-center-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .work-list__item--kiw8:hover {
   content: url("../../src/work/kiw8-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .work-list__item--iri2021:hover {
   content: url("../../src/work/iri2021-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .work-list__item--solar-universe:hover {
   content: url("../../src/work/solar-universe-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .work-list__item--swpy:hover {
   content: url("../../src/work/swpy-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .work-list__item--ai-winter-school:hover {
   content: url("../../src/work/ai-winter-school-2.png");
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+}
+
+@media screen and (max-width: 1116px) {
+  .work-list {
+    grid-template-columns: repeat(2, minmax(320px, auto));
+  }
+  .contact-text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-text__title {
+    margin-bottom: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .work-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .work-list__item {
+    height: 440px;
+  }
+  .work-list__item--iri2023,
+  .work-list__item--kream,
+  .work-list__item--wys-event,
+  .work-list__item--snu-gwuniverse {
+    grid-column: span 1;
+  }
+  .business-menu {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .main-text__slogan {
+    font-size: 24px;
+  }
+  .main-text__name {
+    font-size: 90px;
+  }
+  .main-text {
+    height: 280px;
+  }
 }

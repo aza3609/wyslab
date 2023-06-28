@@ -17,7 +17,8 @@
 .contact-wrap span:nth-child(2) {
   font-size: 38px;
   font-weight: 700;
-  margin: 24px 0px 50px 0px;
+  margin: 14px 0px 38px 0px;
+  line-height: 1.5;
 }
 .contact-wrap span:last-child {
   font-size: 24px;

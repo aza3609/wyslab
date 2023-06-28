@@ -83,3 +83,20 @@
   height: 100%;
   border-radius: var(--main-border-radius);
 }
+
+@media screen and (max-width: 800px) {
+  .content-row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .content-row:nth-child(2n + 1) .content-row__text {
+    order: -1;
+  }
+  .content-row__text p {
+    margin-bottom: 20px;
+  }
+  .content-row__img {
+    height: 300px;
+    margin-top: 34px;
+  }
+}

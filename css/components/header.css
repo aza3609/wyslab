@@ -1,5 +1,6 @@
 header {
-  width: var(--main-width);
+  width: 100%;
+  max-width: 1220px;
   height: 120px;
   display: flex;
   justify-content: space-between;
@@ -41,8 +42,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 130px;
-  height: 48px;
+  width: 120px;
+  height: 45px;
   border-radius: 25px;
   background-color: black;
   color: white;
@@ -54,4 +55,58 @@ header {
 .contact-containter {
   height: 250px;
   background-color: #000000;
+}
+.header__hamburger-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  display: none;
+}
+.header__hamburger-btn.active {
+  content: url(../../img/spaceai-logo-black.svg);
+}
+/*------- active -------*/
+header.active {
+  position: fixed;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: white;
+  color: black;
+}
+header.active .header__nav {
+  display: flex;
+  margin-top: 16px;
+}
+header.active .header__nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+header.active .header__nav li {
+  margin: 18px 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+header.active .header__util {
+  display: flex;
+  flex-direction: column;
+}
+header.active .header__util a {
+  margin: 18px 0px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1320px) {
+  header {
+    padding: 0px 50px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header__hamburger-btn {
+    display: block;
+  }
 }
